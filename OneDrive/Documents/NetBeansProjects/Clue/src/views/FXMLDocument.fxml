@@ -54,26 +54,6 @@
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff65" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.rowIndex="24" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff57" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="24" />
-                  <ImageView fitHeight="347.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
-                     <image>
-                        <Image url="@../../../../../Ambiente%20de%20Trabalho/cozinhaCluedo.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="250.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="19" GridPane.rowIndex="22">
-                     <image>
-                        <Image url="@../../../../../Ambiente%20de%20Trabalho/cluedoescritorio.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="341.0" fitWidth="246.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="12">
-                     <image>
-                        <Image url="@../../../../../Ambiente%20de%20Trabalho/salaJogosCluedo.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="430.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="21">
-                     <image>
-                        <Image url="@../../../../../Ambiente%20de%20Trabalho/saladejantarcluedo.png" />
-                     </image>
-                  </ImageView>
                </children>
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
