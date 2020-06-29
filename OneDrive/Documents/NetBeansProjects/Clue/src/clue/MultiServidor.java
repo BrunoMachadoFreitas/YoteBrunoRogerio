@@ -5,17 +5,18 @@
  */
 package clue;
 
-import java.awt.Button;
-import java.util.ArrayList;
+import java.io.IOException;
+import java.util.Vector;
 
 /**
  *
  * @author senho
  */
-public class Posicao {
-    public static void main(String[] args) {
-        ArrayList<Button> butoes = new ArrayList<>();
-        
+public class MultiServidor {
+   
+    
+    public static void main(String[] args) throws IOException {
         
     }
+    
 }

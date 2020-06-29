@@ -5,13 +5,13 @@
  */
 package clue;
 
-import java.awt.Color;
 import javafx.application.Application;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.shape.Circle;
-import javafx.scene.shape.Ellipse;
+import javafx.scene.input.KeyCode;
+
 import javafx.stage.Stage;
 
 /**
@@ -20,16 +20,17 @@ import javafx.stage.Stage;
  */
 public class Clue extends Application {
     
+   
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
-       
-        Scene scene = new Scene(root);
         
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        
+        Scene scene = new Scene(root);
+       
+   
         stage.setScene(scene);
         stage.show();
-      
-               
     }
 
     /**
@@ -37,7 +38,6 @@ public class Clue extends Application {
      */
     public static void main(String[] args) {
         launch(args);
-        System.out.print("Teste 1 dois roger man");
     }
     
 }
