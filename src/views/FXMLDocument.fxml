@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="805.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clue.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="872.0" prefWidth="1678.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d7a541" height="767.0" layoutX="914.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="447.0" />
+            <GridPane fx:id="tabuleiro" gridLinesVisible="true" layoutX="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="876.0" prefWidth="909.0">
+               <children>
+                  <Rectangle fx:id="cozinha" arcHeight="5.0" arcWidth="5.0" fill="#cdca38" height="178.0" stroke="#514b02" strokeType="INSIDE" width="215.0" GridPane.rowIndex="2" />
+                  <Rectangle fx:id="salajantar" arcHeight="5.0" arcWidth="5.0" fill="#652a2a" height="315.0" stroke="BLACK" strokeType="INSIDE" width="242.0" GridPane.rowIndex="12" />
+                  <Rectangle fx:id="biblioteca" arcHeight="5.0" arcWidth="5.0" fill="#064f94" height="250.0" stroke="BLACK" strokeType="INSIDE" width="361.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                  <Rectangle fx:id="casabanho" arcHeight="5.0" arcWidth="5.0" fill="#5a095e" height="251.0" stroke="BLACK" strokeType="INSIDE" width="224.0" GridPane.columnIndex="19" GridPane.rowIndex="3" />
+                  <Rectangle fx:id="salajogos" arcHeight="5.0" arcWidth="5.0" fill="#1a5416" height="246.0" stroke="BLACK" strokeType="INSIDE" width="254.0" GridPane.rowIndex="21" />
+                  <Rectangle fx:id="armazem" arcHeight="5.0" arcWidth="5.0" fill="#19acae" height="179.0" stroke="BLACK" strokeType="INSIDE" width="224.0" GridPane.columnIndex="19" GridPane.rowIndex="22" />
+                  <Rectangle fx:id="hall" arcHeight="5.0" arcWidth="5.0" fill="#8a4f1c" height="242.0" stroke="BLACK" strokeType="INSIDE" width="324.0" GridPane.columnIndex="8" GridPane.rowIndex="21" />
+                  <Rectangle fx:id="salaestar" arcHeight="5.0" arcWidth="5.0" fill="#98abbc" height="318.0" stroke="BLACK" strokeType="INSIDE" width="262.0" GridPane.columnIndex="18" GridPane.rowIndex="12" />
+                  <Rectangle fx:id="scarletcasa" arcHeight="5.0" arcWidth="5.0" fill="RED" height="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="34.0" y="19.0" GridPane.columnIndex="18" />
+                  <Rectangle fx:id="mustardcasa" arcHeight="5.0" arcWidth="5.0" fill="#fffe00" height="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="34.0" x="17.0" y="24.0" GridPane.columnIndex="24" GridPane.rowIndex="17" />
+                  <Rectangle fx:id="plumcasa" arcHeight="5.0" arcWidth="5.0" fill="#a202ff" height="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="34.0" x="24.0" y="17.0" GridPane.columnIndex="17" GridPane.rowIndex="24" />
+                  <Rectangle fx:id="whitecasa" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="34.0" x="17.0" GridPane.rowIndex="17" />
+                  <Rectangle fx:id="greencasa" arcHeight="5.0" arcWidth="5.0" fill="#1aff00" height="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="34.0" x="7.0" GridPane.rowIndex="7" />
+                  <Rectangle fx:id="peacockcasa" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="34.0" y="7.0" GridPane.columnIndex="7" />
+                  <Circle fx:id="scarlet" fill="#ff1f1f" radius="21.0" stroke="#250000" strokeType="INSIDE" strokeWidth="6.0" GridPane.columnIndex="18" />
+                  <Circle fx:id="mustard" fill="#fff200" radius="21.0" stroke="#250000" strokeType="INSIDE" strokeWidth="6.0" GridPane.columnIndex="24" GridPane.rowIndex="17" />
+                  <Circle fx:id="plum" fill="#a500fa" radius="21.0" stroke="#250000" strokeType="INSIDE" strokeWidth="6.0" GridPane.columnIndex="17" GridPane.rowIndex="24" />
+                  <Circle fx:id="green" fill="#10ff00" radius="21.0" stroke="#250000" strokeType="INSIDE" strokeWidth="6.0" GridPane.rowIndex="7" />
+                  <Circle fx:id="white" fill="#f8f8f8" radius="21.0" stroke="#250000" strokeType="INSIDE" strokeWidth="6.0" GridPane.rowIndex="17" />
+                  <Circle fx:id="peacock" fill="#007efc" radius="21.0" stroke="#250000" strokeType="INSIDE" strokeWidth="6.0" GridPane.columnIndex="7" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="316.0" stroke="BLACK" strokeType="INSIDE" width="326.0" GridPane.columnIndex="8" GridPane.rowIndex="12" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="18" GridPane.rowIndex="11" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="19" GridPane.rowIndex="20" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="19" GridPane.rowIndex="3" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="8" GridPane.rowIndex="21" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="6" GridPane.rowIndex="22" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="3" GridPane.rowIndex="18" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="29.0" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#070707" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="13" GridPane.rowIndex="6" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="22" GridPane.rowIndex="6" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="21" GridPane.rowIndex="16" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="24" GridPane.rowIndex="23" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff65" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.rowIndex="24" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff57" height="33.0" stroke="BLACK" strokeType="INSIDE" width="39.0" GridPane.columnIndex="24" />
+                  <ImageView fitHeight="347.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../../../../Ambiente%20de%20Trabalho/cozinhaCluedo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="250.0" fitWidth="224.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="19" GridPane.rowIndex="22">
+                     <image>
+                        <Image url="@../../../../../Ambiente%20de%20Trabalho/cluedoescritorio.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="341.0" fitWidth="246.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="12">
+                     <image>
+                        <Image url="@../../../../../Ambiente%20de%20Trabalho/salaJogosCluedo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="430.0" fitWidth="327.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" GridPane.rowIndex="21">
+                     <image>
+                        <Image url="@../../../../../Ambiente%20de%20Trabalho/saladejantarcluedo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Button fx:id="botaoRodarDado" layoutX="1153.0" layoutY="44.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="75.0" text="Dado">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="botaoBoato" layoutX="1236.0" layoutY="44.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="75.0" text="Boato">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <CheckBox allowIndeterminate="true" layoutX="1191.0" layoutY="144.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="0.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="179.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="212.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="245.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="277.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="307.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <Text layoutX="1008.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Miss Scarlet" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="524.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="494.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="462.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="429.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1197.0" layoutY="396.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox allowIndeterminate="true" layoutX="1192.0" layoutY="361.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="0.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="1194.0" layoutY="823.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="1194.0" layoutY="791.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="1194.0" layoutY="758.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="1194.0" layoutY="725.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="1189.0" layoutY="692.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="0.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="1190.0" layoutY="597.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="0.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="1195.0" layoutY="631.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="1195.0" layoutY="661.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="75.0" scaleX="1.2" scaleY="1.2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="33.0" layoutX="913.0" layoutY="327.0" stroke="BLACK" strokeType="INSIDE" width="447.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e40000" height="33.0" layoutX="913.0" layoutY="554.0" stroke="BLACK" strokeType="INSIDE" width="447.0" />
+            <Text layoutX="1008.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mrs. Peacock" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1008.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prof. Plum" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1008.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mustard" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1008.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mr.Green" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1008.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="White" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1014.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chave-Inglesa" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1014.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Corda" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1014.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pistola" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1014.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cano enferrujado" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1014.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Faca" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1014.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candelabro" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1011.0" layoutY="781.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biblioteca" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1011.0" layoutY="751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hall de entrada" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1011.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escritório" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1011.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala de jantar" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1011.0" layoutY="649.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala de jogos" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1011.0" layoutY="615.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cozinha" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1011.0" layoutY="807.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lounge" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1011.0" layoutY="839.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Garagem" wrappingWidth="141.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e80000" height="33.0" layoutX="913.0" layoutY="106.0" stroke="BLACK" strokeType="INSIDE" width="447.0" />
+            <Text layoutX="927.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suspeitos" wrappingWidth="141.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="928.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Armas" wrappingWidth="141.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="928.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Divisões" wrappingWidth="141.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Rectangle fx:id="corDoPersonagem" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="105.0" layoutX="914.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="141.0" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
