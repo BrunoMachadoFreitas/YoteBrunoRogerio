@@ -23,7 +23,7 @@
                   <Rectangle fx:id="biblioteca" arcHeight="5.0" arcWidth="5.0" fill="#064f94" height="250.0" stroke="BLACK" strokeType="INSIDE" width="361.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
                   <Rectangle fx:id="casabanho" arcHeight="5.0" arcWidth="5.0" fill="#5a095e" height="251.0" stroke="BLACK" strokeType="INSIDE" width="224.0" GridPane.columnIndex="19" GridPane.rowIndex="3" />
                   <Rectangle fx:id="salajogos" arcHeight="5.0" arcWidth="5.0" fill="#1a5416" height="246.0" stroke="BLACK" strokeType="INSIDE" width="254.0" GridPane.rowIndex="21" />
-                  <Rectangle fx:id="armazem" arcHeight="5.0" arcWidth="5.0" fill="#19acae" height="179.0" stroke="BLACK" strokeType="INSIDE" width="224.0" GridPane.columnIndex="19" GridPane.rowIndex="22" />
+                  <Rectangle fx:id="armazem" arcHeight="5.0" arcWidth="5.0" fill="#19acae" height="175.0" stroke="BLACK" strokeType="INSIDE" width="224.0" GridPane.columnIndex="19" GridPane.rowIndex="22" />
                   <Rectangle fx:id="hall" arcHeight="5.0" arcWidth="5.0" fill="#8a4f1c" height="242.0" stroke="BLACK" strokeType="INSIDE" width="324.0" GridPane.columnIndex="8" GridPane.rowIndex="21" />
                   <Rectangle fx:id="salaestar" arcHeight="5.0" arcWidth="5.0" fill="#98abbc" height="318.0" stroke="BLACK" strokeType="INSIDE" width="262.0" GridPane.columnIndex="18" GridPane.rowIndex="12" />
                   <Rectangle fx:id="scarletcasa" arcHeight="5.0" arcWidth="5.0" fill="RED" height="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="34.0" y="19.0" GridPane.columnIndex="18" />

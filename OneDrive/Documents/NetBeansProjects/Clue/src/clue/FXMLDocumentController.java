@@ -37,6 +37,7 @@ import javafx.stage.Stage;
  * @author senho
  */
 public class FXMLDocumentController implements Initializable {
+   
     Player player;;
     DirecaoAndar dA;
    static Vector <Player> ar = new Vector<>();
@@ -86,56 +87,60 @@ public class FXMLDocumentController implements Initializable {
     private Circle white;
     @FXML
     private Circle peacock;
+
+    /**
+     *
+     */
     @FXML
     public Button botaoRodarDado;
     @FXML
     private Button botaoBoato;
     @FXML
     private Rectangle corDoPersonagem;
-
-    
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
+    public void initialize(URL url, ResourceBundle rb){
         // TODO
       
-       gereDado();
-        
-         Alert dialogoInfo  = new Alert(Alert.AlertType.INFORMATION);
+        Alert dialogoInfo  = new Alert(Alert.AlertType.INFORMATION);
            
             dialogoInfo.setContentText(" O Servidor aceita conexões");
           
             dialogoInfo.showAndWait();
-            try{
-           ServerSocket ss = new ServerSocket();
-            Socket s;
             
+            
+            
+             gereDado();
+        Player p1 = new Player("Cliente " + i,scarlet,(int)scarletcasa.getX(),(int)scarletcasa.getY());
+        moveJogador(p1);
+        /* try{ 
+           ServerSocket ss = new ServerSocket(1234);
+           Socket s;
+             
             while(true){
-                s = ss.accept();
+                                  
+                    s = ss.accept();
+              
                 dialogoInfo.setContentText("Novo Cliente conectado" + s);
                 DataInputStream dis = new DataInputStream(s.getInputStream());
                 DataOutputStream dos = new DataOutputStream(s.getOutputStream());
-              
-                if(i == 1){
-                Player p1 = new Player("Cliente " + i,scarlet,(int)scarletcasa.getX(),(int)scarletcasa.getY(),dis,dos,s);
+                 System.out.println(i);
+                
+                
                 Thread t = new Thread(p1);
                 ar.add(p1);
                 t.start();
-                }
-                else if( i == 2){
-                    Player p2 = new Player("Cliente " + i,plum,(int)plumcasa.getX(),(int)plumcasa.getY(),dis,dos,s);
-                Thread t = new Thread(p2);
-                ar.add(p2);
-                t.start();
-                }
-                
+                gereDado();
+                 moveJogador(p1);
+               
                 i++;
-                
-            }}catch(IOException e){
+               
+            }
+            }catch(IOException e){
                 
             }
-       
-               
-          
+      
+            */   
+           
      
         
     }   
@@ -145,24 +150,35 @@ public class FXMLDocumentController implements Initializable {
      * 
      * Método que faz a implementação da movimentação de cada jogador
      */
-    public void moveJogador(Player atual){
-        int proximaCasa;
-        int contaCasasParaAndar = 0;
-        
-          
-    }
-     
-  
+   
      public  int gereDado(){
         int x = (int) (Math.random()*6+1);
-      
+      try{
        botaoRodarDado.setOnAction(e ->{
            Alert dialogoInfo  = new Alert(Alert.AlertType.INFORMATION);
            
             dialogoInfo.setContentText("O número que lhe saiu foi  " + x);
           
             dialogoInfo.showAndWait();
-       });
+       });}catch(NullPointerException e){
+               
+               }
        return x;
     }
+  public void moveJogador(Player atual){
+      
+        Alert dialogoInfo  = new Alert(Alert.AlertType.INFORMATION);
+           
+            dialogoInfo.setContentText("Para que casa deseja andar?");
+          String x = Le.umaString();
+            dialogoInfo.showAndWait();
+        
+        if(x.equals('w')){
+            atual.setPosX(atual.getPosX()+i);
+            atual.setPosY(atual.getPosY()+i);
+        }
+        
+    }
+  
+    
 }

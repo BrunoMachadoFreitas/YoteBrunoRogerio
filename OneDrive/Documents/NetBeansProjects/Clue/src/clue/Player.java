@@ -22,23 +22,21 @@ import javafx.scene.shape.Circle;
  *
  * @author senho
  */
-public class Player implements Runnable {
+public class Player {
     private String nome;
     private Circle circuloAtual;
     private int posX, posY;
-    final DataInputStream dis;
-    final DataOutputStream dos;
+    
     boolean isLoogedIn;
     Socket s;
-    public Player(String nome, Circle circuloAtual, int posX, int posY,DataInputStream dis,DataOutputStream dos, Socket s){
+    public Player(String nome, Circle circuloAtual, int posX, int posY/*,DataInputStream dis,DataOutputStream dos, Socket s*/){
         this.nome = nome;
         this.circuloAtual = circuloAtual;
         this.posX = posX;
         this.posY = posY;
-        this.dis = dis;
-        this.dos = dos;
+        
         isLoogedIn = true;
-        this.s = s;
+       
     }
 
     public String getNome() {
@@ -79,49 +77,7 @@ public class Player implements Runnable {
         return circuloAtual;
         }
 
-    @Override
-    public void run() {
-    String recebido;
-    while(true){
-        try{
-            recebido = dis.readUTF();
-            System.out.println(recebido);
-            if(recebido.endsWith("logout")){
-                this.isLoogedIn = false;
-                this.s.close();
-                
-            }
-            
-            StringTokenizer st = new StringTokenizer(recebido,"#");
-            String MsgEnviar = st.nextToken(); 
-            String recepiente = null;
-            try{
-                recepiente = st.nextToken();
-            }catch(Exception e){
-            
-            }
-            if(recepiente != null){
-                for(Player p : FXMLDocumentController.ar){
-                    if(p.getNome().equals(recepiente) && p.isLoogedIn){
-                        p.dos.writeUTF( nome + " : " + MsgEnviar);
-                        
-                    }
-                }
-                
-            } else{
-                for(Player p : FXMLDocumentController.ar){
-                    if(!p.getNome().equals(recepiente) && p.isLoogedIn){
-                        p.dos.writeUTF( nome + " : " + MsgEnviar);
-                        
-                    }
-                }
-            }
-            
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-    }
-    }
+  
 
  
 
