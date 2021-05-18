@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 
 /**
  *
@@ -20,10 +21,11 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private Label label;
-    
     @FXML
+    private GridPane tabuleiroYote;
+    
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
+        System.out.println("Hello there");
         label.setText("Hello World!");
     }
     

@@ -1,13 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="1182.0" prefWidth="1700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="yote.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="1182.0" prefWidth="1700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yote.FXMLDocumentController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <GridPane fx:id="tabuleiroYote" layoutX="346.0" layoutY="266.0" prefHeight="502.0" prefWidth="597.0" AnchorPane.bottomAnchor="414.0" AnchorPane.leftAnchor="346.0" AnchorPane.rightAnchor="757.0" AnchorPane.topAnchor="266.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <ImageView fitHeight="578.0" fitWidth="702.0" layoutX="302.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="366.0" AnchorPane.leftAnchor="301.87384033203125" AnchorPane.rightAnchor="736.1261596679688" AnchorPane.topAnchor="238.0">
+         <image>
+            <Image url="@../../../../../Ambiente%20de%20Trabalho/tabuleroImagem.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="1191.0" layoutY="260.0" prefHeight="100.0" prefWidth="412.0" AnchorPane.bottomAnchor="822.0" AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="260.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jogador - " wrappingWidth="70.6708984375" />
+            <Text fx:id="recebeNomeJogador1" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="1191.0" layoutY="491.0" prefHeight="100.0" prefWidth="412.0" AnchorPane.bottomAnchor="591.0" AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="491.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jogador - " wrappingWidth="70.6708984375" />
+            <Text fx:id="recebeNomeJogador2" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </HBox>
     </children>
 </AnchorPane>
